@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Online Shooping</title>
+<meta charset="utf-8">    
+<link rel="stylesheet" href="Shopzilla.css">
+</head >
+<header>
+<img src=".//Photos/Carts.jpg" alt="firebird.jpg" width="auto" height="100" align="left" >   
+<h1>ShoopZilla</h1>
+
+</header>
+
+
+    <nav>
+        <ul>
+            <li class="blue"><a href="Home.html">Home</a></li>
+            <li class="blue"><a href="Mens.html">Mens</a></li>
+            <li class="blue"><a href="Women.html">Womens</a></li>
+            <li class="blue"><a href="Kids.html">Kids</a></li>
+            <li class="blue"><a href="Toys.html">Toys</a></li>
+            </ul>
+        </nav>
+    
+
+</header>
+<body>
+    <h2 class="w3-center">Happy family</h2>
+
+<div class="w3-content w3-section" style="max-width:420px">
+  <img class="mySlides" src=".//Slide/mens-fashion.jpg" style="width:325%">
+  <img class="mySlides" src=".//Slide/Women-fashion.jpg" style="width:325%">
+  <img class="mySlides" src=".//Slide/Boys-fashion.jpg" style="width:325%">
+  <img class="mySlides" src=".//Slide/Girls-fashion.jpg" style="width:325%">
+  <img class="mySlides" src=".//Slide/Toys-1.jpg"style="width:325%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+
+<main>
+    <h2 class = "w3-center">
+    Find the perfect outerwear for the family member
+  </h2>
+<div class= "bottom-img" >
+  <div class= "image-flex">
+    <img src=".//Photos/Store1.jpeg" alt="Store1" width="400px" height="350px"> 
+    <br>
+    <br>
+    <br>
+    <h4>We are now located at: 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Towson Town Center
+      <br>
+      825 Dulaney Valley Rd, Towson, MD 21204
+     
+    </h4>
+  
+  </div>  
+
+  <div class = "image-flex"> 
+    <img  class = "first" src=".//Photos/fashion.jpg" alt="fashion" width="400px" height="350px"; >
+    <h4>
+      Get access to all of our fashion collection
+
+    </h4>
+     
+    
+    </ul>
+  </div>
+  </div>
+</main>
+
+<footer style= "height:40px; padding-top:20px">
+    Contact Email:<a href = "mailto:ShoopZilla@gmail.com">ShoopZilla@gmail.com</a> 
+</footer>
+</html>
